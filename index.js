@@ -163,9 +163,9 @@ d3.json('./neighborhoods.geojson').then(function (data) {
             .select('div#slider-range')
             .append('svg')
             .attr('width', 500)
-            .attr('height', 50)
+            .attr('height', 60)
             .append('g')
-            .attr('transform', 'translate(20,10)');
+            .attr('transform', 'translate(100,20)');
 
         gRange.call(sliderRange);
 
