@@ -6,6 +6,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/d3-simple-slider"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <style>
         body {
             text-align: center;
@@ -32,15 +34,23 @@
     <button id="test">test</button> -->
 
     <main>
-        <label for="scalePicker">Scale points by:</label>
-        <select id="scalePicker" style="margin-bottom: 20px;"></select>
-        <!-- <br /> -->
-            <div class="col-sm-2">
-                <label for="slider-range">Price Range: <span id="value-range"></span></label>
+        <div class="row text-center">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+                <label for="scalePicker">Scale points by:</label>
+                <br />
+                <select id="scalePicker" style="margin-bottom: 20px;"></select>
             </div>
-            <div class="col-sm">
+            <!-- <br /> -->
+
+
+            <div class="col-sm-3">
+                <label for="slider-range">Price Range: <span id="value-range"></span></label>
+
                 <div id="slider-range"></div>
             </div>
+            <div class="col-sm-3"></div>
+        </div>
         </div>
     </main>
 </body>
